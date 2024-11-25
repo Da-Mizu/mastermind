@@ -269,16 +269,19 @@ uint8_t chenille(void) {
         switch (i) {
             case 1:
                 S3_SetHigh();
+                S2_SetHigh();
                 S1_SetLow();
                 colonne = 1;
                 break;
             case 2:
                 S1_SetHigh();
+                S3_SetHigh();
                 S2_SetLow();
                 colonne = 2;
                 break;
             case 3:
                 S2_SetHigh();
+                S1_SetHigh();
                 S3_SetLow();
                 colonne = 3;
                 break;
