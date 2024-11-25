@@ -1,82 +1,79 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"67 main.c
-[; ;main.c: 67: typedef struct {
-[s S1571 `uc 1 `uc 1 `uc 1 ]
-[n S1571 . green red blue ]
-[p mainexit ]
-"59 ./mcc_generated_files/system/system.h
-[; ;./mcc_generated_files/system/system.h: 59: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"357 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 357:     struct {
-[s S31 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S31 . INTEDG . PEIE GIE ]
-"356
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 356: typedef union {
-[u S30 `S31 1 ]
-[n S30 . . ]
-"364
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 364: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
-[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-"144 ./mcc_generated_files/system/../spi/mssp1.h
-[; ;./mcc_generated_files/system/../spi/mssp1.h: 144: _Bool SPI1_Open(uint8_t spiConfigIndex);
-[v _SPI1_Open `(a ~T0 @X0 0 ef1`uc ]
-"29 C:\Program Files\Microchip\xc8\v2.46\pic\include\c99\string.h
-[; ;C:\Program Files\Microchip\xc8\v2.46\pic\include\c99\string.h: 29: void *memset (void *, int, size_t);
-[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
-"161 ./mcc_generated_files/system/../spi/mssp1.h
-[; ;./mcc_generated_files/system/../spi/mssp1.h: 161: void SPI1_BufferExchange(void *bufferData, size_t bufferSize);
-[v _SPI1_BufferExchange `(v ~T0 @X0 0 ef2`*v`ui ]
-"63 main.c
-[; ;main.c: 63: uint8_t chenille(void);
-[v _chenille `(uc ~T0 @X0 0 ef ]
-[v F202 `(v ~T0 @X0 1 tf1`ul ]
-"20 C:\Program Files\Microchip\xc8\v2.46\pic\include\builtins.h
-[v __delay `JF202 ~T0 @X0 0 e ]
-[p i __delay ]
-"64 main.c
-[; ;main.c: 64: void detec(uint8_t colonne);
-[v _detec `(v ~T0 @X0 0 ef1`uc ]
-"240
-[; ;main.c: 240:     typedef struct {
-[s S1577 `uc 1 `uc 1 `uc 1 ]
-[n S1577 . vert rouge bleu ]
-"907 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 907:     struct {
-[s S51 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S51 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
-"906
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 906: typedef union {
-[u S50 `S51 1 ]
-[n S50 . . ]
-"918
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 918: extern volatile LATCbits_t LATCbits __attribute__((address(0x018)));
-[v _LATCbits `VS50 ~T0 @X0 0 e@24 ]
-"783
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 783:     struct {
-[s S47 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S47 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
-"782
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 782: typedef union {
-[u S46 `S47 1 ]
-[n S46 . . ]
-"794
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 794: extern volatile LATAbits_t LATAbits __attribute__((address(0x016)));
-[v _LATAbits `VS46 ~T0 @X0 0 e@22 ]
-"390
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 390:     struct {
-[s S33 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S33 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
-"389
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 389: typedef union {
-[u S32 `S33 1 ]
-[n S32 . . ]
-"401
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 401: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x00C)));
-[v _PORTAbits `VS32 ~T0 @X0 0 e@12 ]
-"117 C:\Program Files\Microchip\xc8\v2.46\pic\include\c99\stdio.h
-[; ;C:\Program Files\Microchip\xc8\v2.46\pic\include\c99\stdio.h: 117: int printf(const char *restrict, ...);
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+[v F11713 `(v ~T0 @X0 0 tf ]
+"25117 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25117: extern volatile unsigned char CLC1POL __attribute__((address(0xE11)));
+[v _CLC1POL `Vuc ~T0 @X0 0 e@3601 ]
+"25195
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25195: extern volatile unsigned char CLC1SEL0 __attribute__((address(0xE12)));
+[v _CLC1SEL0 `Vuc ~T0 @X0 0 e@3602 ]
+"25323
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25323: extern volatile unsigned char CLC1SEL1 __attribute__((address(0xE13)));
+[v _CLC1SEL1 `Vuc ~T0 @X0 0 e@3603 ]
+"25451
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25451: extern volatile unsigned char CLC1SEL2 __attribute__((address(0xE14)));
+[v _CLC1SEL2 `Vuc ~T0 @X0 0 e@3604 ]
+"25579
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25579: extern volatile unsigned char CLC1SEL3 __attribute__((address(0xE15)));
+[v _CLC1SEL3 `Vuc ~T0 @X0 0 e@3605 ]
+"25707
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25707: extern volatile unsigned char CLC1GLS0 __attribute__((address(0xE16)));
+[v _CLC1GLS0 `Vuc ~T0 @X0 0 e@3606 ]
+"25819
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25819: extern volatile unsigned char CLC1GLS1 __attribute__((address(0xE17)));
+[v _CLC1GLS1 `Vuc ~T0 @X0 0 e@3607 ]
+"25931
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25931: extern volatile unsigned char CLC1GLS2 __attribute__((address(0xE18)));
+[v _CLC1GLS2 `Vuc ~T0 @X0 0 e@3608 ]
+"26043
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 26043: extern volatile unsigned char CLC1GLS3 __attribute__((address(0xE19)));
+[v _CLC1GLS3 `Vuc ~T0 @X0 0 e@3609 ]
+"24999
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 24999: extern volatile unsigned char CLC1CON __attribute__((address(0xE10)));
+[v _CLC1CON `Vuc ~T0 @X0 0 e@3600 ]
+[v F11708 `(v ~T0 @X0 0 tf ]
+"114 mcc_generated_files/clc/src/../clc1.h
+[; ;mcc_generated_files/clc/src/../clc1.h: 114:  void CLC1_CallbackRegister(void (* CallbackHandler)(void));
+[v _CLC1_CallbackRegister `(v ~T0 @X0 0 ef1`*F11708 ]
+"39 mcc_generated_files/clc/src/clc1.c
+[; ;mcc_generated_files/clc/src/clc1.c: 39: static void CLC1_DefaultCallback(void);
+[v _CLC1_DefaultCallback `(v ~T0 @X0 0 sf ]
+"21200 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 21200:     struct {
+[s S964 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S964 . TMR1GIF TMR3GIF TMR5GIF . CLC1IF CLC2IF CLC3IF CLC4IF ]
+"21199
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 21199: typedef union {
+[u S963 `S964 1 ]
+[n S963 . . ]
+"21211
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 21211: extern volatile PIR5bits_t PIR5bits __attribute__((address(0x711)));
+[v _PIR5bits `VS963 ~T0 @X0 0 e@1809 ]
+"25005
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25005:     struct {
+[s S1144 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1144 . LC1MODE LC1INTN LC1INTP LC1OUT . LC1EN ]
+"25013
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25013:     struct {
+[s S1145 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1145 . LC1MODE0 LC1MODE1 LC1MODE2 ]
+"25018
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25018:     struct {
+[s S1146 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1146 . MODE INTN INTP OUT . EN ]
+"25026
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25026:     struct {
+[s S1147 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1147 . MODE0 MODE1 MODE2 ]
+"25004
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25004: typedef union {
+[u S1143 `S1144 1 `S1145 1 `S1146 1 `S1147 1 ]
+[n S1143 . . . . . ]
+"25032
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 25032: extern volatile CLC1CONbits_t CLC1CONbits __attribute__((address(0xE10)));
+[v _CLC1CONbits `VS1143 ~T0 @X0 0 e@3600 ]
+[v F11724 `(v ~T0 @X0 0 tf ]
+[v F11726 `(v ~T0 @X0 0 tf ]
+[v F11730 `(v ~T0 @X0 0 tf ]
 "54 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1631,670 +1628,230 @@ Version 4.0 HI-TECH Software Intermediate Code
 "35038
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h: 35038: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"54 main.c
-[; ;main.c: 54: int code_secret[4];
-[v _code_secret `i ~T0 @X0 -> 4 `i e ]
-"73
-[; ;main.c: 73: const Led magenta = {0, 255, 255};
-[v _magenta `CS1571 ~T0 @X0 1 e ]
-[i _magenta
-:U ..
-:U ..
--> -> 0 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
-..
-..
-]
-"74
-[; ;main.c: 74: const Led rouge = {0, 255, 0};
-[v _rouge `CS1571 ~T0 @X0 1 e ]
-[i _rouge
-:U ..
-:U ..
--> -> 0 `i `uc
--> -> 255 `i `uc
--> -> 0 `i `uc
-..
-..
-]
-"75
-[; ;main.c: 75: const Led carotte = {102, 244, 27};
-[v _carotte `CS1571 ~T0 @X0 1 e ]
-[i _carotte
-:U ..
-:U ..
--> -> 102 `i `uc
--> -> 244 `i `uc
--> -> 27 `i `uc
-..
-..
-]
-"76
-[; ;main.c: 76: const Led jaune = {255, 255, 0};
-[v _jaune `CS1571 ~T0 @X0 1 e ]
-[i _jaune
-:U ..
-:U ..
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 0 `i `uc
-..
-..
-]
-"77
-[; ;main.c: 77: const Led vert = {255, 0, 0};
-[v _vert `CS1571 ~T0 @X0 1 e ]
-[i _vert
-:U ..
-:U ..
--> -> 255 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-..
-..
-]
-"78
-[; ;main.c: 78: const Led cyan = {255, 0, 255};
-[v _cyan `CS1571 ~T0 @X0 1 e ]
-[i _cyan
-:U ..
-:U ..
--> -> 255 `i `uc
--> -> 0 `i `uc
--> -> 255 `i `uc
-..
-..
-]
-"79
-[; ;main.c: 79: const Led bleu = {0, 0, 255};
-[v _bleu `CS1571 ~T0 @X0 1 e ]
-[i _bleu
-:U ..
-:U ..
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 255 `i `uc
-..
-..
-]
-"80
-[; ;main.c: 80: const Led violet = {0, 127, 255};
-[v _violet `CS1571 ~T0 @X0 1 e ]
-[i _violet
-:U ..
-:U ..
--> -> 0 `i `uc
--> -> 127 `i `uc
--> -> 255 `i `uc
-..
-..
-]
-"82
-[; ;main.c: 82: const Led blanc = {255, 255, 255};
-[v _blanc `CS1571 ~T0 @X0 1 e ]
-[i _blanc
-:U ..
-:U ..
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
-..
-..
-]
-"83
-[; ;main.c: 83: const Led rose = {182, 255, 193};
-[v _rose `CS1571 ~T0 @X0 1 e ]
-[i _rose
-:U ..
-:U ..
--> -> 182 `i `uc
--> -> 255 `i `uc
--> -> 193 `i `uc
-..
-..
-]
-"84
-[; ;main.c: 84: const Led noir = {0, 0, 0};
-[v _noir `CS1571 ~T0 @X0 1 e ]
-[i _noir
-:U ..
-:U ..
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-..
-..
-]
-"86
-[; ;main.c: 86: Led Data[128];
-[v _Data `S1571 ~T0 @X0 -> 128 `i e ]
-[v $root$_main `(v ~T0 @X0 0 e ]
-"88
-[; ;main.c: 88: int main(void) {
-[v _main `(i ~T0 @X0 1 ef ]
+"38 mcc_generated_files/clc/src/clc1.c
+[; ;mcc_generated_files/clc/src/clc1.c: 38: static void (*CLC1_Callback)(void);
+[v _CLC1_Callback `*F11713 ~T0 @X0 1 s ]
+"41
+[; ;mcc_generated_files/clc/src/clc1.c: 41: void CLC1_Initialize(void)
+[v _CLC1_Initialize `(v ~T0 @X0 1 ef ]
+"42
+[; ;mcc_generated_files/clc/src/clc1.c: 42: {
 {
-[e :U _main ]
+[e :U _CLC1_Initialize ]
+[f ]
+"45
+[; ;mcc_generated_files/clc/src/clc1.c: 45:     CLC1POL = 0x0;
+[e = _CLC1POL -> -> 0 `i `uc ]
+"47
+[; ;mcc_generated_files/clc/src/clc1.c: 47:     CLC1SEL0 = 0x27;
+[e = _CLC1SEL0 -> -> 39 `i `uc ]
+"49
+[; ;mcc_generated_files/clc/src/clc1.c: 49:     CLC1SEL1 = 0x13;
+[e = _CLC1SEL1 -> -> 19 `i `uc ]
+"51
+[; ;mcc_generated_files/clc/src/clc1.c: 51:     CLC1SEL2 = 0x26;
+[e = _CLC1SEL2 -> -> 38 `i `uc ]
+"53
+[; ;mcc_generated_files/clc/src/clc1.c: 53:     CLC1SEL3 = 0x0;
+[e = _CLC1SEL3 -> -> 0 `i `uc ]
+"55
+[; ;mcc_generated_files/clc/src/clc1.c: 55:     CLC1GLS0 = 0x2;
+[e = _CLC1GLS0 -> -> 2 `i `uc ]
+"57
+[; ;mcc_generated_files/clc/src/clc1.c: 57:     CLC1GLS1 = 0x8;
+[e = _CLC1GLS1 -> -> 8 `i `uc ]
+"59
+[; ;mcc_generated_files/clc/src/clc1.c: 59:     CLC1GLS2 = 0x20;
+[e = _CLC1GLS2 -> -> 32 `i `uc ]
+"61
+[; ;mcc_generated_files/clc/src/clc1.c: 61:     CLC1GLS3 = 0x2;
+[e = _CLC1GLS3 -> -> 2 `i `uc ]
+"63
+[; ;mcc_generated_files/clc/src/clc1.c: 63:     CLC1CON = 0x80;
+[e = _CLC1CON -> -> 128 `i `uc ]
+"66
+[; ;mcc_generated_files/clc/src/clc1.c: 66:     CLC1_CallbackRegister(CLC1_DefaultCallback);
+[e ( _CLC1_CallbackRegister (1 &U _CLC1_DefaultCallback ]
+"69
+[; ;mcc_generated_files/clc/src/clc1.c: 69:     PIR5bits.CLC1IF = 0;
+[e = . . _PIR5bits 0 4 -> -> 0 `i `uc ]
+"70
+[; ;mcc_generated_files/clc/src/clc1.c: 70: }
+[e :UE 1562 ]
+}
+"72
+[; ;mcc_generated_files/clc/src/clc1.c: 72: void CLC1_Enable(void)
+[v _CLC1_Enable `(v ~T0 @X0 1 ef ]
+"73
+[; ;mcc_generated_files/clc/src/clc1.c: 73: {
+{
+[e :U _CLC1_Enable ]
+[f ]
+"74
+[; ;mcc_generated_files/clc/src/clc1.c: 74:     CLC1CONbits.LC1EN = 1;
+[e = . . _CLC1CONbits 0 5 -> -> 1 `i `uc ]
+"75
+[; ;mcc_generated_files/clc/src/clc1.c: 75: }
+[e :UE 1563 ]
+}
+"77
+[; ;mcc_generated_files/clc/src/clc1.c: 77: void CLC1_Disable(void)
+[v _CLC1_Disable `(v ~T0 @X0 1 ef ]
+"78
+[; ;mcc_generated_files/clc/src/clc1.c: 78: {
+{
+[e :U _CLC1_Disable ]
+[f ]
+"79
+[; ;mcc_generated_files/clc/src/clc1.c: 79:     CLC1CONbits.LC1EN = 0;
+[e = . . _CLC1CONbits 0 5 -> -> 0 `i `uc ]
+"80
+[; ;mcc_generated_files/clc/src/clc1.c: 80: }
+[e :UE 1564 ]
+}
+"82
+[; ;mcc_generated_files/clc/src/clc1.c: 82: void CLC1_RisingEdgeDetectionEnable(void)
+[v _CLC1_RisingEdgeDetectionEnable `(v ~T0 @X0 1 ef ]
+"83
+[; ;mcc_generated_files/clc/src/clc1.c: 83: {
+{
+[e :U _CLC1_RisingEdgeDetectionEnable ]
+[f ]
+"84
+[; ;mcc_generated_files/clc/src/clc1.c: 84:     CLC1CONbits.INTP = 1;
+[e = . . _CLC1CONbits 2 2 -> -> 1 `i `uc ]
+"85
+[; ;mcc_generated_files/clc/src/clc1.c: 85: }
+[e :UE 1565 ]
+}
+"87
+[; ;mcc_generated_files/clc/src/clc1.c: 87: void CLC1_RisingEdgeDetectionDisable(void)
+[v _CLC1_RisingEdgeDetectionDisable `(v ~T0 @X0 1 ef ]
+"88
+[; ;mcc_generated_files/clc/src/clc1.c: 88: {
+{
+[e :U _CLC1_RisingEdgeDetectionDisable ]
 [f ]
 "89
-[; ;main.c: 89:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"91
-[; ;main.c: 91:     uint8_t i;
-[v _i `uc ~T0 @X0 1 a ]
-"100
-[; ;main.c: 100:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-"106
-[; ;main.c: 106:     (INTCONbits.PEIE = 1);
-[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-"111
-[; ;main.c: 111:     SPI1_Open(0);
-[e ( _SPI1_Open (1 -> -> 0 `i `uc ]
-"113
-[; ;main.c: 113:     memset(Data, 0x00, sizeof (Data));
-[e ( _memset (3 , , -> &U _Data `*v -> 0 `i -> # _Data `ui ]
-"158
-[; ;main.c: 158:     SPI1_BufferExchange(Data, sizeof (Data));
-[e ( _SPI1_BufferExchange (2 , -> &U _Data `*v -> # _Data `ui ]
-"160
-[; ;main.c: 160:     while (1) {
-[e :U 1574 ]
+[; ;mcc_generated_files/clc/src/clc1.c: 89:     CLC1CONbits.INTP = 0;
+[e = . . _CLC1CONbits 2 2 -> -> 0 `i `uc ]
+"90
+[; ;mcc_generated_files/clc/src/clc1.c: 90: }
+[e :UE 1566 ]
+}
+"92
+[; ;mcc_generated_files/clc/src/clc1.c: 92: void CLC1_FallingEdgeDetectionEnable(void)
+[v _CLC1_FallingEdgeDetectionEnable `(v ~T0 @X0 1 ef ]
+"93
+[; ;mcc_generated_files/clc/src/clc1.c: 93: {
 {
-"161
-[; ;main.c: 161:         chenille();
-[e ( _chenille ..  ]
-"162
-[; ;main.c: 162:         _delay((unsigned long)((1)*(32000000U/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"163
-[; ;main.c: 163:         detec(chenille());
-[e ( _detec (1 ( _chenille ..  ]
-"165
-[; ;main.c: 165:     }
+[e :U _CLC1_FallingEdgeDetectionEnable ]
+[f ]
+"94
+[; ;mcc_generated_files/clc/src/clc1.c: 94:     CLC1CONbits.INTN = 1;
+[e = . . _CLC1CONbits 2 1 -> -> 1 `i `uc ]
+"95
+[; ;mcc_generated_files/clc/src/clc1.c: 95: }
+[e :UE 1567 ]
+}
+"97
+[; ;mcc_generated_files/clc/src/clc1.c: 97: void CLC1_FallingEdgeDetectionDisable(void)
+[v _CLC1_FallingEdgeDetectionDisable `(v ~T0 @X0 1 ef ]
+"98
+[; ;mcc_generated_files/clc/src/clc1.c: 98: {
+{
+[e :U _CLC1_FallingEdgeDetectionDisable ]
+[f ]
+"99
+[; ;mcc_generated_files/clc/src/clc1.c: 99:     CLC1CONbits.INTN = 0;
+[e = . . _CLC1CONbits 2 1 -> -> 0 `i `uc ]
+"100
+[; ;mcc_generated_files/clc/src/clc1.c: 100: }
+[e :UE 1568 ]
+}
+"102
+[; ;mcc_generated_files/clc/src/clc1.c: 102: void CLC1_CallbackRegister(void (* CallbackHandler)(void))
+[v _CLC1_CallbackRegister `(v ~T0 @X0 1 ef1`*F11724 ]
+"103
+[; ;mcc_generated_files/clc/src/clc1.c: 103: {
+{
+[e :U _CLC1_CallbackRegister ]
+"102
+[; ;mcc_generated_files/clc/src/clc1.c: 102: void CLC1_CallbackRegister(void (* CallbackHandler)(void))
+[v _CallbackHandler `*F11726 ~T0 @X0 1 r1 ]
+"103
+[; ;mcc_generated_files/clc/src/clc1.c: 103: {
+[f ]
+"104
+[; ;mcc_generated_files/clc/src/clc1.c: 104:     CLC1_Callback = CallbackHandler;
+[e = _CLC1_Callback _CallbackHandler ]
+"105
+[; ;mcc_generated_files/clc/src/clc1.c: 105: }
+[e :UE 1569 ]
+}
+"107
+[; ;mcc_generated_files/clc/src/clc1.c: 107: static void CLC1_DefaultCallback(void)
+[v _CLC1_DefaultCallback `(v ~T0 @X0 1 sf ]
+"108
+[; ;mcc_generated_files/clc/src/clc1.c: 108: {
+{
+[e :U _CLC1_DefaultCallback ]
+[f ]
+"111
+[; ;mcc_generated_files/clc/src/clc1.c: 111: }
+[e :UE 1570 ]
+}
+"113
+[; ;mcc_generated_files/clc/src/clc1.c: 113: void CLC1_Tasks(void)
+[v _CLC1_Tasks `(v ~T0 @X0 1 ef ]
+"114
+[; ;mcc_generated_files/clc/src/clc1.c: 114: {
+{
+[e :U _CLC1_Tasks ]
+[f ]
+"115
+[; ;mcc_generated_files/clc/src/clc1.c: 115:     if(PIR5bits.CLC1IF == 1)
+[e $ ! == -> . . _PIR5bits 0 4 `i -> 1 `i 1572  ]
+"116
+[; ;mcc_generated_files/clc/src/clc1.c: 116:     {
+{
+"117
+[; ;mcc_generated_files/clc/src/clc1.c: 117:         if(CLC1_Callback != ((void*)0))
+[e $ ! != _CLC1_Callback -> -> -> 0 `i `*v `*F11730 1573  ]
+"118
+[; ;mcc_generated_files/clc/src/clc1.c: 118:         {
+{
+"119
+[; ;mcc_generated_files/clc/src/clc1.c: 119:             CLC1_Callback();
+[e ( *U _CLC1_Callback ..  ]
+"120
+[; ;mcc_generated_files/clc/src/clc1.c: 120:         }
 }
 [e :U 1573 ]
-[e $U 1574  ]
-[e :U 1575 ]
-"166
-[; ;main.c: 166: }
-[e :UE 1572 ]
+"121
+[; ;mcc_generated_files/clc/src/clc1.c: 121:         PIR5bits.CLC1IF = 0;
+[e = . . _PIR5bits 0 4 -> -> 0 `i `uc ]
+"122
+[; ;mcc_generated_files/clc/src/clc1.c: 122:     }
 }
-"238
-[; ;main.c: 238: void init(void) {
-[v _init `(v ~T0 @X0 1 ef ]
+[e :U 1572 ]
+"123
+[; ;mcc_generated_files/clc/src/clc1.c: 123: }
+[e :UE 1571 ]
+}
+"126
+[; ;mcc_generated_files/clc/src/clc1.c: 126: _Bool CLC1_OutputStatusGet(void)
+[v _CLC1_OutputStatusGet `(a ~T0 @X0 1 ef ]
+"127
+[; ;mcc_generated_files/clc/src/clc1.c: 127: {
 {
-[e :U _init ]
+[e :U _CLC1_OutputStatusGet ]
 [f ]
-"245
-[; ;main.c: 245:     const Led magenta = {0, 255, 255};
-[v F12643 `CS1577 ~T0 @X0 1 s magenta ]
-[i F12643
-:U ..
-:U ..
--> -> 0 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
-..
-..
-]
-"246
-[; ;main.c: 246:     const Led rouge = {0, 255, 0};
-[v F12644 `CS1577 ~T0 @X0 1 s rouge ]
-[i F12644
-:U ..
-:U ..
--> -> 0 `i `uc
--> -> 255 `i `uc
--> -> 0 `i `uc
-..
-..
-]
-"247
-[; ;main.c: 247:     const Led carotte = {102, 244, 27};
-[v F12645 `CS1577 ~T0 @X0 1 s carotte ]
-[i F12645
-:U ..
-:U ..
--> -> 102 `i `uc
--> -> 244 `i `uc
--> -> 27 `i `uc
-..
-..
-]
-"248
-[; ;main.c: 248:     const Led jaune = {255, 255, 0};
-[v F12646 `CS1577 ~T0 @X0 1 s jaune ]
-[i F12646
-:U ..
-:U ..
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 0 `i `uc
-..
-..
-]
-"249
-[; ;main.c: 249:     const Led vert = {255, 0, 0};
-[v F12647 `CS1577 ~T0 @X0 1 s vert ]
-[i F12647
-:U ..
-:U ..
--> -> 255 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-..
-..
-]
-"250
-[; ;main.c: 250:     const Led cyan = {255, 0, 255};
-[v F12648 `CS1577 ~T0 @X0 1 s cyan ]
-[i F12648
-:U ..
-:U ..
--> -> 255 `i `uc
--> -> 0 `i `uc
--> -> 255 `i `uc
-..
-..
-]
-"251
-[; ;main.c: 251:     const Led bleu = {0, 0, 255};
-[v F12649 `CS1577 ~T0 @X0 1 s bleu ]
-[i F12649
-:U ..
-:U ..
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 255 `i `uc
-..
-..
-]
-"252
-[; ;main.c: 252:     const Led violet = {0, 127, 255};
-[v F12650 `CS1577 ~T0 @X0 1 s violet ]
-[i F12650
-:U ..
-:U ..
--> -> 0 `i `uc
--> -> 127 `i `uc
--> -> 255 `i `uc
-..
-..
-]
-"254
-[; ;main.c: 254:     const Led blanc = {255, 255, 255};
-[v F12651 `CS1577 ~T0 @X0 1 s blanc ]
-[i F12651
-:U ..
-:U ..
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
-..
-..
-]
-"255
-[; ;main.c: 255:     const Led rose = {182, 255, 193};
-[v F12652 `CS1577 ~T0 @X0 1 s rose ]
-[i F12652
-:U ..
-:U ..
--> -> 182 `i `uc
--> -> 255 `i `uc
--> -> 193 `i `uc
-..
-..
-]
-"256
-[; ;main.c: 256:     const Led noir = {0, 0, 0};
-[v F12653 `CS1577 ~T0 @X0 1 s noir ]
-[i F12653
-:U ..
-:U ..
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-..
-..
-]
-"260
-[; ;main.c: 260: }
-[e :UE 1576 ]
+"128
+[; ;mcc_generated_files/clc/src/clc1.c: 128:     return(CLC1CONbits.LC1OUT);
+[e ) -> . . _CLC1CONbits 0 3 `a ]
+[e $UE 1574  ]
+"129
+[; ;mcc_generated_files/clc/src/clc1.c: 129: }
+[e :UE 1574 ]
 }
-"262
-[; ;main.c: 262: void set_couleur(void) {
-[v _set_couleur `(v ~T0 @X0 1 ef ]
-{
-[e :U _set_couleur ]
-[f ]
-"264
-[; ;main.c: 264: }
-[e :UE 1578 ]
-}
-"266
-[; ;main.c: 266: uint8_t chenille(void) {
-[v _chenille `(uc ~T0 @X0 1 ef ]
-{
-[e :U _chenille ]
-[f ]
-"267
-[; ;main.c: 267:     uint8_t i, colonne = 0;
-[v _i `uc ~T0 @X0 1 a ]
-[v _colonne `uc ~T0 @X0 1 a ]
-[e = _colonne -> -> 0 `i `uc ]
-"268
-[; ;main.c: 268:     for (i = 0; i <= 3; i++) {
-{
-[e = _i -> -> 0 `i `uc ]
-[e $ <= -> _i `i -> 3 `i 1580  ]
-[e $U 1581  ]
-[e :U 1580 ]
-{
-"269
-[; ;main.c: 269:         switch (i) {
-[e $U 1584  ]
-{
-"270
-[; ;main.c: 270:             case 1:
-[e :U 1585 ]
-"271
-[; ;main.c: 271:                 do { LATCbits.LATC1 = 1; } while(0);
-[e :U 1588 ]
-{
-[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
-}
-[e :U 1587 ]
-"272
-[; ;main.c: 272:                 do { LATAbits.LATA6 = 0; } while(0);
-[e :U 1591 ]
-{
-[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
-}
-[e :U 1590 ]
-"273
-[; ;main.c: 273:                 colonne = 1;
-[e = _colonne -> -> 1 `i `uc ]
-"274
-[; ;main.c: 274:                 break;
-[e $U 1583  ]
-"275
-[; ;main.c: 275:             case 2:
-[e :U 1592 ]
-"276
-[; ;main.c: 276:                 do { LATAbits.LATA6 = 1; } while(0);
-[e :U 1595 ]
-{
-[e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
-}
-[e :U 1594 ]
-"277
-[; ;main.c: 277:                 do { LATCbits.LATC0 = 0; } while(0);
-[e :U 1598 ]
-{
-[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
-}
-[e :U 1597 ]
-"278
-[; ;main.c: 278:                 colonne = 2;
-[e = _colonne -> -> 2 `i `uc ]
-"279
-[; ;main.c: 279:                 break;
-[e $U 1583  ]
-"280
-[; ;main.c: 280:             case 3:
-[e :U 1599 ]
-"281
-[; ;main.c: 281:                 do { LATCbits.LATC0 = 1; } while(0);
-[e :U 1602 ]
-{
-[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
-}
-[e :U 1601 ]
-"282
-[; ;main.c: 282:                 do { LATCbits.LATC1 = 0; } while(0);
-[e :U 1605 ]
-{
-[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
-}
-[e :U 1604 ]
-"283
-[; ;main.c: 283:                 colonne = 3;
-[e = _colonne -> -> 3 `i `uc ]
-"284
-[; ;main.c: 284:                 break;
-[e $U 1583  ]
-"285
-[; ;main.c: 285:         }
-}
-[e $U 1583  ]
-[e :U 1584 ]
-[e [\ _i , $ -> 1 `i 1585
- , $ -> 2 `i 1592
- , $ -> 3 `i 1599
- 1583 ]
-[e :U 1583 ]
-"286
-[; ;main.c: 286:     }
-}
-[e ++ _i -> -> 1 `i `uc ]
-[e $ <= -> _i `i -> 3 `i 1580  ]
-[e :U 1581 ]
-}
-"287
-[; ;main.c: 287:     return colonne;
-[e ) _colonne ]
-[e $UE 1579  ]
-"289
-[; ;main.c: 289: }
-[e :UE 1579 ]
-}
-"291
-[; ;main.c: 291: void detec(uint8_t colonne) {
-[v _detec `(v ~T0 @X0 1 ef1`uc ]
-{
-[e :U _detec ]
-[v _colonne `uc ~T0 @X0 1 r1 ]
-[f ]
-"292
-[; ;main.c: 292:     uint8_t valeur, ligne,touche;
-[v _valeur `uc ~T0 @X0 1 a ]
-[v _ligne `uc ~T0 @X0 1 a ]
-[v _touche `uc ~T0 @X0 1 a ]
-"295
-[; ;main.c: 295:     if(PORTAbits.RA2==1)
-[e $ ! == -> . . _PORTAbits 0 2 `i -> 1 `i 1607  ]
-"296
-[; ;main.c: 296:     {
-{
-"297
-[; ;main.c: 297:         ligne=1;
-[e = _ligne -> -> 1 `i `uc ]
-"298
-[; ;main.c: 298:     }
-}
-[e :U 1607 ]
-"299
-[; ;main.c: 299:     if(PORTAbits.RA3==1)
-[e $ ! == -> . . _PORTAbits 0 3 `i -> 1 `i 1608  ]
-"300
-[; ;main.c: 300:     {
-{
-"301
-[; ;main.c: 301:         ligne=2;
-[e = _ligne -> -> 2 `i `uc ]
-"302
-[; ;main.c: 302:     }
-}
-[e :U 1608 ]
-"303
-[; ;main.c: 303:     if(PORTAbits.RA4==1)
-[e $ ! == -> . . _PORTAbits 0 4 `i -> 1 `i 1609  ]
-"304
-[; ;main.c: 304:     {
-{
-"305
-[; ;main.c: 305:         ligne=3;
-[e = _ligne -> -> 3 `i `uc ]
-"306
-[; ;main.c: 306:     }
-}
-[e :U 1609 ]
-"307
-[; ;main.c: 307:     if(PORTAbits.RA5==1)
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1610  ]
-"308
-[; ;main.c: 308:     {
-{
-"309
-[; ;main.c: 309:         ligne=4;
-[e = _ligne -> -> 4 `i `uc ]
-"310
-[; ;main.c: 310:     }
-}
-[e :U 1610 ]
-"312
-[; ;main.c: 312:     valeur = (10 * colonne) + ligne;
-[e = _valeur -> + * -> 10 `i -> _colonne `i -> _ligne `i `uc ]
-"314
-[; ;main.c: 314:     switch (valeur)
-[e $U 1612  ]
-"315
-[; ;main.c: 315:     {
-{
-"316
-[; ;main.c: 316:         case(11):
-[e :U 1613 ]
-"317
-[; ;main.c: 317:             touche=1;
-[e = _touche -> -> 1 `i `uc ]
-"318
-[; ;main.c: 318:             break;
-[e $U 1611  ]
-"319
-[; ;main.c: 319:         case(12):
-[e :U 1614 ]
-"320
-[; ;main.c: 320:             touche=4;
-[e = _touche -> -> 4 `i `uc ]
-"321
-[; ;main.c: 321:             break;
-[e $U 1611  ]
-"322
-[; ;main.c: 322:         case(13):
-[e :U 1615 ]
-"323
-[; ;main.c: 323:             touche=7;
-[e = _touche -> -> 7 `i `uc ]
-"324
-[; ;main.c: 324:             break;
-[e $U 1611  ]
-"325
-[; ;main.c: 325:         case(14):
-[e :U 1616 ]
-"326
-[; ;main.c: 326:             touche=10;
-[e = _touche -> -> 10 `i `uc ]
-"327
-[; ;main.c: 327:             break;
-[e $U 1611  ]
-"328
-[; ;main.c: 328:         case(21):
-[e :U 1617 ]
-"329
-[; ;main.c: 329:             touche=2;
-[e = _touche -> -> 2 `i `uc ]
-"330
-[; ;main.c: 330:             break;
-[e $U 1611  ]
-"331
-[; ;main.c: 331:         case(22):
-[e :U 1618 ]
-"332
-[; ;main.c: 332:             touche=5;
-[e = _touche -> -> 5 `i `uc ]
-"333
-[; ;main.c: 333:             break;
-[e $U 1611  ]
-"334
-[; ;main.c: 334:         case(23):
-[e :U 1619 ]
-"335
-[; ;main.c: 335:             touche=8;
-[e = _touche -> -> 8 `i `uc ]
-"336
-[; ;main.c: 336:             break;
-[e $U 1611  ]
-"337
-[; ;main.c: 337:         case(24):
-[e :U 1620 ]
-"338
-[; ;main.c: 338:             touche=0;
-[e = _touche -> -> 0 `i `uc ]
-"339
-[; ;main.c: 339:             break;
-[e $U 1611  ]
-"340
-[; ;main.c: 340:         case(31):
-[e :U 1621 ]
-"341
-[; ;main.c: 341:             touche=3;
-[e = _touche -> -> 3 `i `uc ]
-"342
-[; ;main.c: 342:             break;
-[e $U 1611  ]
-"343
-[; ;main.c: 343:         case(32):
-[e :U 1622 ]
-"344
-[; ;main.c: 344:             touche=6;
-[e = _touche -> -> 6 `i `uc ]
-"345
-[; ;main.c: 345:             break;
-[e $U 1611  ]
-"346
-[; ;main.c: 346:         case(33):
-[e :U 1623 ]
-"347
-[; ;main.c: 347:             touche=9;
-[e = _touche -> -> 9 `i `uc ]
-"348
-[; ;main.c: 348:             break;
-[e $U 1611  ]
-"349
-[; ;main.c: 349:         case(34):
-[e :U 1624 ]
-"350
-[; ;main.c: 350:             touche=12;
-[e = _touche -> -> 12 `i `uc ]
-"351
-[; ;main.c: 351:             break;
-[e $U 1611  ]
-"353
-[; ;main.c: 353:             printf("%hhu",touche);
-[e ( _printf , (. :s 1C -> _touche `i ]
-"354
-[; ;main.c: 354:     }
-}
-[e $U 1611  ]
-[e :U 1612 ]
-[e [\ _valeur , $ -> 11 `i 1613
- , $ -> 12 `i 1614
- , $ -> 13 `i 1615
- , $ -> 14 `i 1616
- , $ -> 21 `i 1617
- , $ -> 22 `i 1618
- , $ -> 23 `i 1619
- , $ -> 24 `i 1620
- , $ -> 31 `i 1621
- , $ -> 32 `i 1622
- , $ -> 33 `i 1623
- , $ -> 34 `i 1624
- 1611 ]
-[e :U 1611 ]
-"355
-[; ;main.c: 355:     }
-[e :UE 1606 ]
-}
-[p f _printf 41944064 ]
-[a 1C 37 104 104 117 0 ]

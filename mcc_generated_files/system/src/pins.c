@@ -34,8 +34,10 @@
 
 #include "../pins.h"
 
-void (*S1_InterruptHandler)(void);
-void (*S2_InterruptHandler)(void);
+void (*E1_InterruptHandler)(void);
+void (*E2_InterruptHandler)(void);
+void (*E3_InterruptHandler)(void);
+void (*E4_InterruptHandler)(void);
 
 void PIN_MANAGER_Initialize(void)
 {
@@ -49,14 +51,14 @@ void PIN_MANAGER_Initialize(void)
     /**
     TRISx registers
     */
-    TRISA = 0xBC;
-    TRISB = 0xFE;
-    TRISC = 0xC0;
+    TRISA = 0xBF;
+    TRISB = 0xFF;
+    TRISC = 0xC4;
 
     /**
     ANSELx registers
     */
-    ANSELA = 0xBF;
+    ANSELA = 0x83;
     ANSELB = 0xFF;
     ANSELC = 0xE4;
 
@@ -80,13 +82,13 @@ void PIN_MANAGER_Initialize(void)
     */
     SLRCONA = 0xFF;
     SLRCONB = 0xFF;
-    SLRCONC = 0xE3;
+    SLRCONC = 0xE7;
     /**
     INLVLx registers
     */
     INLVLA = 0xFF;
     INLVLB = 0xFF;
-    INLVLC = 0xE3;
+    INLVLC = 0xE7;
     INLVLE = 0x8;
 
     /**
@@ -94,14 +96,8 @@ void PIN_MANAGER_Initialize(void)
     */
     RC4PPS = 0x15;  //RC4->MSSP1:SDO1;
     RC5PPS = 0x01;  //RC5->CLC1:CLC1OUT;
-    RA1PPS = 0x0F;  //RA1->PWM7:PWM7OUT;
-    RA0PPS = 0x0E;  //RA0->PWM6:PWM6OUT;
     SSP1CLKPPS = 0x13;  //RC3->MSSP1:SCK1;
     RC3PPS = 0x14;  //RC3->MSSP1:SCK1;
-    CCP1PPS = 0x12;  //RC2->CCP1:CCP1;
-    RC2PPS = 0x09;  //RC2->CCP1:CCP1;
-    CCP2PPS = 0x8;  //RB0->CCP2:CCP2;
-    RB0PPS = 0x0A;  //RB0->CCP2:CCP2;
 
     /**
     APFCON registers
@@ -110,21 +106,23 @@ void PIN_MANAGER_Initialize(void)
    /**
     IOCx registers 
     */
-    IOCAP = 0x40;
-    IOCAN = 0x0;
+    IOCAP = 0x0;
+    IOCAN = 0x3C;
     IOCAF = 0x0;
     IOCBP = 0x0;
     IOCBN = 0x0;
     IOCBF = 0x0;
     IOCCP = 0x0;
-    IOCCN = 0x1;
+    IOCCN = 0x0;
     IOCCF = 0x0;
     IOCEP = 0x0;
     IOCEN = 0x0;
     IOCEF = 0x0;
 
-    S1_SetInterruptHandler(S1_DefaultInterruptHandler);
-    S2_SetInterruptHandler(S2_DefaultInterruptHandler);
+    E1_SetInterruptHandler(E1_DefaultInterruptHandler);
+    E2_SetInterruptHandler(E2_DefaultInterruptHandler);
+    E3_SetInterruptHandler(E3_DefaultInterruptHandler);
+    E4_SetInterruptHandler(E4_DefaultInterruptHandler);
 
     // Enable PIE0bits.IOCIE interrupt 
     PIE0bits.IOCIE = 1; 
@@ -132,76 +130,146 @@ void PIN_MANAGER_Initialize(void)
   
 void PIN_MANAGER_IOC(void)
 {
-    // interrupt on change for pin S1}
-    if(IOCAFbits.IOCAF6 == 1)
+    // interrupt on change for pin E1}
+    if(IOCAFbits.IOCAF2 == 1)
     {
-        S1_ISR();  
+        E1_ISR();  
     }
-    // interrupt on change for pin S2}
-    if(IOCCFbits.IOCCF0 == 1)
+    // interrupt on change for pin E2}
+    if(IOCAFbits.IOCAF3 == 1)
     {
-        S2_ISR();  
+        E2_ISR();  
+    }
+    // interrupt on change for pin E3}
+    if(IOCAFbits.IOCAF4 == 1)
+    {
+        E3_ISR();  
+    }
+    // interrupt on change for pin E4}
+    if(IOCAFbits.IOCAF5 == 1)
+    {
+        E4_ISR();  
     }
 }
    
 /**
-   S1 Interrupt Service Routine
+   E1 Interrupt Service Routine
 */
-void S1_ISR(void) {
+void E1_ISR(void) {
 
-    // Add custom IOCAF6 code
+    // Add custom IOCAF2 code
 
     // Call the interrupt handler for the callback registered at runtime
-    if(S1_InterruptHandler)
+    if(E1_InterruptHandler)
     {
-        S1_InterruptHandler();
+        E1_InterruptHandler();
     }
-    IOCAFbits.IOCAF6 = 0;
+    IOCAFbits.IOCAF2 = 0;
 }
 
 /**
-  Allows selecting an interrupt handler for IOCAF6 at application runtime
+  Allows selecting an interrupt handler for IOCAF2 at application runtime
 */
-void S1_SetInterruptHandler(void (* InterruptHandler)(void)){
-    S1_InterruptHandler = InterruptHandler;
+void E1_SetInterruptHandler(void (* InterruptHandler)(void)){
+    E1_InterruptHandler = InterruptHandler;
 }
 
 /**
-  Default interrupt handler for IOCAF6
+  Default interrupt handler for IOCAF2
 */
-void S1_DefaultInterruptHandler(void){
-    // add your S1 interrupt custom code
-    // or set custom function using S1_SetInterruptHandler()
+void E1_DefaultInterruptHandler(void){
+    // add your E1 interrupt custom code
+    // or set custom function using E1_SetInterruptHandler()
 }
    
 /**
-   S2 Interrupt Service Routine
+   E2 Interrupt Service Routine
 */
-void S2_ISR(void) {
+void E2_ISR(void) {
 
-    // Add custom IOCCF0 code
+    // Add custom IOCAF3 code
 
     // Call the interrupt handler for the callback registered at runtime
-    if(S2_InterruptHandler)
+    if(E2_InterruptHandler)
     {
-        S2_InterruptHandler();
+        E2_InterruptHandler();
     }
-    IOCCFbits.IOCCF0 = 0;
+    IOCAFbits.IOCAF3 = 0;
 }
 
 /**
-  Allows selecting an interrupt handler for IOCCF0 at application runtime
+  Allows selecting an interrupt handler for IOCAF3 at application runtime
 */
-void S2_SetInterruptHandler(void (* InterruptHandler)(void)){
-    S2_InterruptHandler = InterruptHandler;
+void E2_SetInterruptHandler(void (* InterruptHandler)(void)){
+    E2_InterruptHandler = InterruptHandler;
 }
 
 /**
-  Default interrupt handler for IOCCF0
+  Default interrupt handler for IOCAF3
 */
-void S2_DefaultInterruptHandler(void){
-    // add your S2 interrupt custom code
-    // or set custom function using S2_SetInterruptHandler()
+void E2_DefaultInterruptHandler(void){
+    // add your E2 interrupt custom code
+    // or set custom function using E2_SetInterruptHandler()
+}
+   
+/**
+   E3 Interrupt Service Routine
+*/
+void E3_ISR(void) {
+
+    // Add custom IOCAF4 code
+
+    // Call the interrupt handler for the callback registered at runtime
+    if(E3_InterruptHandler)
+    {
+        E3_InterruptHandler();
+    }
+    IOCAFbits.IOCAF4 = 0;
+}
+
+/**
+  Allows selecting an interrupt handler for IOCAF4 at application runtime
+*/
+void E3_SetInterruptHandler(void (* InterruptHandler)(void)){
+    E3_InterruptHandler = InterruptHandler;
+}
+
+/**
+  Default interrupt handler for IOCAF4
+*/
+void E3_DefaultInterruptHandler(void){
+    // add your E3 interrupt custom code
+    // or set custom function using E3_SetInterruptHandler()
+}
+   
+/**
+   E4 Interrupt Service Routine
+*/
+void E4_ISR(void) {
+
+    // Add custom IOCAF5 code
+
+    // Call the interrupt handler for the callback registered at runtime
+    if(E4_InterruptHandler)
+    {
+        E4_InterruptHandler();
+    }
+    IOCAFbits.IOCAF5 = 0;
+}
+
+/**
+  Allows selecting an interrupt handler for IOCAF5 at application runtime
+*/
+void E4_SetInterruptHandler(void (* InterruptHandler)(void)){
+    E4_InterruptHandler = InterruptHandler;
+}
+
+/**
+  Default interrupt handler for IOCAF5
+*/
+void E4_DefaultInterruptHandler(void){
+    // add your E4 interrupt custom code
+    // or set custom function using E4_SetInterruptHandler()
 }
 /**
  End of File

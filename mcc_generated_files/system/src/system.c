@@ -42,9 +42,6 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     CLC1_Initialize();
     PWM1_Initialize();
-    PWM5_Initialize();
-    PWM6_Initialize();
-    PWM7_Initialize();
     SPI1_Initialize();
     TMR2_Initialize();
     TMR4_Initialize();

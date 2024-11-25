@@ -1,4 +1,4 @@
- /*
+/*
  * MAIN Generated Driver File
  * 
  * @file main.c
@@ -10,7 +10,7 @@
  * @version MAIN Driver Version 1.0.2
  *
  * @version Package Version: 3.1.2
-*/
+ */
 
 /*
 © [2024] Microchip Technology Inc. and its subsidiaries.
@@ -31,7 +31,7 @@
     TOTAL LIABILITY ON ALL CLAIMS RELATED TO THE SOFTWARE WILL NOT 
     EXCEED AMOUNT OF FEES, IF ANY, YOU PAID DIRECTLY TO MICROCHIP FOR 
     THIS SOFTWARE.
-*/
+ */
 #include "mcc_generated_files/system/system.h"
 //https://www.mycompiler.io/view/GIsg47tvPNK
 
@@ -47,7 +47,8 @@
 #define LARGEURS 8 
 /*
     Main application
-*/
+ */
+
 
 
 int code_secret[LONGUEUR_CODE_SECRET];
@@ -58,61 +59,60 @@ void matrice(void);
 void init(void);
 void set_couleur(void);
 void gen_digi(void);
-void TMR4_InterruptHandler(void);
-void S1_InterruptHandle(void);
-void S2_InterruptHandle(void);
 
-typedef struct
-{
+uint8_t chenille(void);
+void detec(uint8_t colonne);
+uint8_t ToucheE1(void);
+
+typedef struct {
     char green;
     char red;
     char blue;
-}Led;
+} Led;
 
-const Led magenta ={0,255,255};
-const Led rouge = {0,255,0};
-const Led carotte = {102,244,27};
-const Led jaune = {255,255,0};
-const Led vert = {255,0,0};
-const Led cyan = {255,0,255};
-const Led bleu = {0,0,255};
-const Led violet = {0,127,255};
+const Led magenta = {0, 255, 255};
+const Led rouge = {0, 255, 0};
+const Led carotte = {102, 244, 27};
+const Led jaune = {255, 255, 0};
+const Led vert = {255, 0, 0};
+const Led cyan = {255, 0, 255};
+const Led bleu = {0, 0, 255};
+const Led violet = {0, 127, 255};
 
-const Led blanc = {255,255,255};
-const Led rose = {182,255,193};
-const Led noir = {0,0,0};
+const Led blanc = {255, 255, 255};
+const Led rose = {182, 255, 193};
+const Led noir = {0, 0, 0};
 
 Led Data[128];
 
-int main(void)
-{
+int main(void) {
     SYSTEM_Initialize();
-    
-    uint8_t i;
-    
 
-    
+    uint8_t i;
+
+
+
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts 
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts 
     // Use the following macros to: 
 
     // Enable the Global Interrupts 
-    INTERRUPT_GlobalInterruptEnable(); 
+    INTERRUPT_GlobalInterruptEnable();
 
     // Disable the Global Interrupts 
     //INTERRUPT_GlobalInterruptDisable(); 
 
     // Enable the Peripheral Interrupts 
-    INTERRUPT_PeripheralInterruptEnable(); 
+    INTERRUPT_PeripheralInterruptEnable();
 
     // Disable the Peripheral Interrupts 
     //INTERRUPT_PeripheralInterruptDisable(); 
 
     SPI1_Open(0);
-        
-    memset(Data,0x00, sizeof(Data));// raz tableau
- //envoie magenta dans premiere led 
-    
+
+    memset(Data, 0x00, sizeof (Data)); // raz tableau
+    //envoie magenta dans premiere led 
+
     /*Data[9] = rouge;
     Data[10] = blanc;
     Data[11] = rouge;
@@ -143,27 +143,27 @@ int main(void)
     Data[86] = rouge;
     Data[109] = rouge;
     Data[116] = rouge;*/
-     
-   
-   
 
 
-    
 
-    
-        
-    
-    
 
-    SPI1_BufferExchange(Data, sizeof(Data)); //penser a interdire les IT durant l'echange
 
-    while(1)
-    {
 
-    } 
+
+
+
+
+
+
+    SPI1_BufferExchange(Data, sizeof (Data)); //penser a interdire les IT durant l'echange
+
+    while (1) {
+        chenille();
+        __delay_ms(1);
+        detec(chenille());
+
+    }
 }
-    
-    
 
 /*
   void gencodesecret(void)
@@ -235,32 +235,119 @@ void matrice(void)
         {121, 122, 123, 124, 125, 126, 127, 128}
     }
 }*/
-void init(void)
-{
-    typedef struct
-{
-    char vert;
-    char rouge;
-    char bleu;
-}Led;
-const Led magenta ={0,255,255};
-const Led rouge = {0,255,0};
-const Led carotte = {102,244,27};
-const Led jaune = {255,255,0};
-const Led vert = {255,0,0};
-const Led cyan = {255,0,255};
-const Led bleu = {0,0,255};
-const Led violet = {0,127,255};
+void init(void) {
 
-const Led blanc = {255,255,255};
-const Led rose = {182,255,193};
-const Led noir = {0,0,0};
+    typedef struct {
+        char vert;
+        char rouge;
+        char bleu;
+    } Led;
+    const Led magenta = {0, 255, 255};
+    const Led rouge = {0, 255, 0};
+    const Led carotte = {102, 244, 27};
+    const Led jaune = {255, 255, 0};
+    const Led vert = {255, 0, 0};
+    const Led cyan = {255, 0, 255};
+    const Led bleu = {0, 0, 255};
+    const Led violet = {0, 127, 255};
 
-//int matrix[HAUTEURS][LARGEURS]={0};
+    const Led blanc = {255, 255, 255};
+    const Led rose = {182, 255, 193};
+    const Led noir = {0, 0, 0};
+
+    //int matrix[HAUTEURS][LARGEURS]={0};
 
 }
-void set_couleur(void)
-{
-    
+
+void set_couleur(void) {
+
 }
+
+uint8_t chenille(void) {
+    uint8_t i, colonne = 0;
+    for (i = 0; i <= 3; i++) {
+        switch (i) {
+            case 1:
+                S3_SetHigh();
+                S1_SetLow();
+                colonne = 1;
+                break;
+            case 2:
+                S1_SetHigh();
+                S2_SetLow();
+                colonne = 2;
+                break;
+            case 3:
+                S2_SetHigh();
+                S3_SetLow();
+                colonne = 3;
+                break;
+        }
+    }
+    return colonne;
+
+}
+
+void detec(uint8_t colonne) {
+    uint8_t valeur, ligne, touche;
+
+
+    if (E1_GetValue() == 1) {
+        ligne = 1;
+    }
+    if (E2_GetValue() == 1) {
+        ligne = 2;
+    }
+    if (E3_GetValue() == 1) {
+        ligne = 3;
+    }
+    if (E4_GetValue() == 1) {
+        ligne = 4;
+    }
+
+    valeur = (10 * colonne) + ligne;
+
+    switch (valeur) {
+        case(11):
+            touche = 1;
+            break;
+        case(12):
+            touche = 4;
+            break;
+        case(13):
+            touche = 7;
+            break;
+        case(14):
+            touche = 10;
+            break;
+        case(21):
+            touche = 2;
+            break;
+        case(22):
+            touche = 5;
+            break;
+        case(23):
+            touche = 8;
+            break;
+        case(24):
+            touche = 0;
+            break;
+        case(31):
+            touche = 3;
+            break;
+        case(32):
+            touche = 6;
+            break;
+        case(33):
+            touche = 9;
+            break;
+        case(34):
+            touche = 12;
+            break;
+
+            printf("%hhu", touche);
+    }
+}
+
+
 

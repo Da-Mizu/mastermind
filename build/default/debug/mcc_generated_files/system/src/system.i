@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "mcc_generated_files/system/src/system.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 35 "main.c"
-# 1 "./mcc_generated_files/system/system.h" 1
-# 39 "./mcc_generated_files/system/system.h"
+# 1 "mcc_generated_files/system/src/system.c" 2
+# 36 "mcc_generated_files/system/src/system.c"
+# 1 "mcc_generated_files/system/src/../system.h" 1
+# 39 "mcc_generated_files/system/src/../system.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -19796,22 +19796,22 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
-# 39 "./mcc_generated_files/system/system.h" 2
+# 39 "mcc_generated_files/system/src/../system.h" 2
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdbool.h" 1 3
-# 41 "./mcc_generated_files/system/system.h" 2
+# 41 "mcc_generated_files/system/src/../system.h" 2
 
-# 1 "./mcc_generated_files/system/config_bits.h" 1
-# 39 "./mcc_generated_files/system/config_bits.h"
-# 1 "./mcc_generated_files/system/../system/clock.h" 1
-# 56 "./mcc_generated_files/system/../system/clock.h"
+# 1 "mcc_generated_files/system/src/../config_bits.h" 1
+# 39 "mcc_generated_files/system/src/../config_bits.h"
+# 1 "mcc_generated_files/system/src/../../system/clock.h" 1
+# 56 "mcc_generated_files/system/src/../../system/clock.h"
 void CLOCK_Initialize(void);
-# 39 "./mcc_generated_files/system/config_bits.h" 2
-# 42 "./mcc_generated_files/system/system.h" 2
+# 39 "mcc_generated_files/system/src/../config_bits.h" 2
+# 42 "mcc_generated_files/system/src/../system.h" 2
 
-# 1 "./mcc_generated_files/system/../system/pins.h" 1
-# 252 "./mcc_generated_files/system/../system/pins.h"
+# 1 "mcc_generated_files/system/src/../../system/pins.h" 1
+# 252 "mcc_generated_files/system/src/../../system/pins.h"
 void PIN_MANAGER_Initialize (void);
 
 
@@ -19829,11 +19829,11 @@ void PIN_MANAGER_IOC(void);
 
 
 void E1_ISR(void);
-# 278 "./mcc_generated_files/system/../system/pins.h"
+# 278 "mcc_generated_files/system/src/../../system/pins.h"
 void E1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 289 "./mcc_generated_files/system/../system/pins.h"
+# 289 "mcc_generated_files/system/src/../../system/pins.h"
 extern void (*E1_InterruptHandler)(void);
-# 300 "./mcc_generated_files/system/../system/pins.h"
+# 300 "mcc_generated_files/system/src/../../system/pins.h"
 void E1_DefaultInterruptHandler(void);
 
 
@@ -19843,11 +19843,11 @@ void E1_DefaultInterruptHandler(void);
 
 
 void E2_ISR(void);
-# 318 "./mcc_generated_files/system/../system/pins.h"
+# 318 "mcc_generated_files/system/src/../../system/pins.h"
 void E2_SetInterruptHandler(void (* InterruptHandler)(void));
-# 329 "./mcc_generated_files/system/../system/pins.h"
+# 329 "mcc_generated_files/system/src/../../system/pins.h"
 extern void (*E2_InterruptHandler)(void);
-# 340 "./mcc_generated_files/system/../system/pins.h"
+# 340 "mcc_generated_files/system/src/../../system/pins.h"
 void E2_DefaultInterruptHandler(void);
 
 
@@ -19857,11 +19857,11 @@ void E2_DefaultInterruptHandler(void);
 
 
 void E3_ISR(void);
-# 358 "./mcc_generated_files/system/../system/pins.h"
+# 358 "mcc_generated_files/system/src/../../system/pins.h"
 void E3_SetInterruptHandler(void (* InterruptHandler)(void));
-# 369 "./mcc_generated_files/system/../system/pins.h"
+# 369 "mcc_generated_files/system/src/../../system/pins.h"
 extern void (*E3_InterruptHandler)(void);
-# 380 "./mcc_generated_files/system/../system/pins.h"
+# 380 "mcc_generated_files/system/src/../../system/pins.h"
 void E3_DefaultInterruptHandler(void);
 
 
@@ -19871,16 +19871,16 @@ void E3_DefaultInterruptHandler(void);
 
 
 void E4_ISR(void);
-# 398 "./mcc_generated_files/system/../system/pins.h"
+# 398 "mcc_generated_files/system/src/../../system/pins.h"
 void E4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 409 "./mcc_generated_files/system/../system/pins.h"
+# 409 "mcc_generated_files/system/src/../../system/pins.h"
 extern void (*E4_InterruptHandler)(void);
-# 420 "./mcc_generated_files/system/../system/pins.h"
+# 420 "mcc_generated_files/system/src/../../system/pins.h"
 void E4_DefaultInterruptHandler(void);
-# 43 "./mcc_generated_files/system/system.h" 2
+# 43 "mcc_generated_files/system/src/../system.h" 2
 
-# 1 "./mcc_generated_files/system/../clc/clc1.h" 1
-# 48 "./mcc_generated_files/system/../clc/clc1.h"
+# 1 "mcc_generated_files/system/src/../../clc/clc1.h" 1
+# 48 "mcc_generated_files/system/src/../../clc/clc1.h"
 void CLC1_Initialize(void);
 
 
@@ -19930,7 +19930,7 @@ void CLC1_FallingEdgeDetectionEnable(void);
 
 
 void CLC1_FallingEdgeDetectionDisable(void);
-# 106 "./mcc_generated_files/system/../clc/clc1.h"
+# 106 "mcc_generated_files/system/src/../../clc/clc1.h"
 _Bool CLC1_OutputStatusGet(void);
 
 
@@ -19948,10 +19948,10 @@ _Bool CLC1_OutputStatusGet(void);
 
 
 void CLC1_Tasks(void);
-# 44 "./mcc_generated_files/system/system.h" 2
+# 44 "mcc_generated_files/system/src/../system.h" 2
 
-# 1 "./mcc_generated_files/system/../pwm/ccp1.h" 1
-# 54 "./mcc_generated_files/system/../pwm/ccp1.h"
+# 1 "mcc_generated_files/system/src/../../pwm/ccp1.h" 1
+# 54 "mcc_generated_files/system/src/../../pwm/ccp1.h"
 void CCP1_Initialize(void);
 
 
@@ -19961,21 +19961,21 @@ void CCP1_Initialize(void);
 
 
 void CCP1_LoadDutyValue(uint16_t dutyValue);
-# 71 "./mcc_generated_files/system/../pwm/ccp1.h"
+# 71 "mcc_generated_files/system/src/../../pwm/ccp1.h"
 _Bool CCP1_OutputStatusGet(void);
-# 45 "./mcc_generated_files/system/system.h" 2
+# 45 "mcc_generated_files/system/src/../system.h" 2
 
-# 1 "./mcc_generated_files/system/../spi/mssp1.h" 1
-# 38 "./mcc_generated_files/system/../spi/mssp1.h"
-# 1 "./mcc_generated_files/system/../spi/spi_interface.h" 1
-# 39 "./mcc_generated_files/system/../spi/spi_interface.h"
+# 1 "mcc_generated_files/system/src/../../spi/mssp1.h" 1
+# 38 "mcc_generated_files/system/src/../../spi/mssp1.h"
+# 1 "mcc_generated_files/system/src/../../spi/spi_interface.h" 1
+# 39 "mcc_generated_files/system/src/../../spi/spi_interface.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stddef.h" 1 3
 # 19 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stddef.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
 # 138 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef int ptrdiff_t;
 # 20 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stddef.h" 2 3
-# 39 "./mcc_generated_files/system/../spi/spi_interface.h" 2
+# 39 "mcc_generated_files/system/src/../../spi/spi_interface.h" 2
 
 
 
@@ -20000,7 +20000,7 @@ struct SPI_INTERFACE
     void (*RxCompleteCallbackRegister)(void (*callbackHandler)(void));
     void (*TxCompleteCallbackRegister)(void (*callbackHandler)(void));
 };
-# 38 "./mcc_generated_files/system/../spi/mssp1.h" 2
+# 38 "mcc_generated_files/system/src/../../spi/mssp1.h" 2
 
 
 
@@ -20009,7 +20009,7 @@ struct SPI_INTERFACE
 
 
 extern const struct SPI_INTERFACE SPI1_Host;
-# 115 "./mcc_generated_files/system/../spi/mssp1.h"
+# 115 "mcc_generated_files/system/src/../../spi/mssp1.h"
 typedef enum {
     HOST_CONFIG,
     MSSP1_DEFAULT
@@ -20030,7 +20030,7 @@ void SPI1_Initialize(void);
 
 
 void SPI1_Deinitialize(void);
-# 144 "./mcc_generated_files/system/../spi/mssp1.h"
+# 144 "mcc_generated_files/system/src/../../spi/mssp1.h"
 _Bool SPI1_Open(uint8_t spiConfigIndex);
 
 
@@ -20040,11 +20040,11 @@ _Bool SPI1_Open(uint8_t spiConfigIndex);
 
 
 void SPI1_Close(void);
-# 161 "./mcc_generated_files/system/../spi/mssp1.h"
+# 161 "mcc_generated_files/system/src/../../spi/mssp1.h"
 void SPI1_BufferExchange(void *bufferData, size_t bufferSize);
-# 170 "./mcc_generated_files/system/../spi/mssp1.h"
+# 170 "mcc_generated_files/system/src/../../spi/mssp1.h"
 void SPI1_BufferWrite(void *bufferData, size_t bufferSize);
-# 179 "./mcc_generated_files/system/../spi/mssp1.h"
+# 179 "mcc_generated_files/system/src/../../spi/mssp1.h"
 void SPI1_BufferRead(void *bufferData, size_t bufferSize);
 
 
@@ -20054,7 +20054,7 @@ void SPI1_BufferRead(void *bufferData, size_t bufferSize);
 
 
 uint8_t SPI1_ByteExchange(uint8_t byteData);
-# 197 "./mcc_generated_files/system/../spi/mssp1.h"
+# 197 "mcc_generated_files/system/src/../../spi/mssp1.h"
 void SPI1_ByteWrite(uint8_t byteData);
 
 
@@ -20064,16 +20064,16 @@ void SPI1_ByteWrite(uint8_t byteData);
 
 
 uint8_t SPI1_ByteRead(void);
-# 214 "./mcc_generated_files/system/../spi/mssp1.h"
+# 214 "mcc_generated_files/system/src/../../spi/mssp1.h"
 _Bool SPI1_IsRxReady(void);
-# 223 "./mcc_generated_files/system/../spi/mssp1.h"
+# 223 "mcc_generated_files/system/src/../../spi/mssp1.h"
 _Bool SPI1_IsTxReady(void);
-# 46 "./mcc_generated_files/system/system.h" 2
+# 46 "mcc_generated_files/system/src/../system.h" 2
 
-# 1 "./mcc_generated_files/system/../timer/tmr2.h" 1
-# 39 "./mcc_generated_files/system/../timer/tmr2.h"
-# 1 "./mcc_generated_files/system/../timer/timer_interface.h" 1
-# 50 "./mcc_generated_files/system/../timer/timer_interface.h"
+# 1 "mcc_generated_files/system/src/../../timer/tmr2.h" 1
+# 39 "mcc_generated_files/system/src/../../timer/tmr2.h"
+# 1 "mcc_generated_files/system/src/../../timer/timer_interface.h" 1
+# 50 "mcc_generated_files/system/src/../../timer/timer_interface.h"
 struct TMR_INTERFACE
 {
     void (*Initialize)(void);
@@ -20083,8 +20083,8 @@ struct TMR_INTERFACE
     void (*TimeoutCallbackRegister)(void (* CallbackHandler)(void));
     void (*Tasks)(void);
 };
-# 39 "./mcc_generated_files/system/../timer/tmr2.h" 2
-# 107 "./mcc_generated_files/system/../timer/tmr2.h"
+# 39 "mcc_generated_files/system/src/../../timer/tmr2.h" 2
+# 107 "mcc_generated_files/system/src/../../timer/tmr2.h"
 extern const struct TMR_INTERFACE Timer2;
 
 
@@ -20094,7 +20094,7 @@ extern const struct TMR_INTERFACE Timer2;
 
 typedef enum
 {
-# 124 "./mcc_generated_files/system/../timer/tmr2.h"
+# 124 "mcc_generated_files/system/src/../../timer/tmr2.h"
    TMR2_ROP_STARTS_TMRON,
 
 
@@ -20131,7 +20131,7 @@ typedef enum
 
 
    TMR2_ROP_RESETS_ERSHIGH,
-# 170 "./mcc_generated_files/system/../timer/tmr2.h"
+# 170 "mcc_generated_files/system/src/../../timer/tmr2.h"
    TMR2_OS_STARTS_TMRON,
 
 
@@ -20181,7 +20181,7 @@ typedef enum
 
 
    TMR2_OS_STARTS_TMRON_ERSLOW = 0x17,
-# 227 "./mcc_generated_files/system/../timer/tmr2.h"
+# 227 "mcc_generated_files/system/src/../../timer/tmr2.h"
    TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT = 0x11,
 
 
@@ -20273,21 +20273,21 @@ typedef enum
 
     TMR2_LC4_OUT = 0x11
 } TMR2_HLT_EXT_RESET_SOURCE;
-# 329 "./mcc_generated_files/system/../timer/tmr2.h"
+# 329 "mcc_generated_files/system/src/../../timer/tmr2.h"
 void TMR2_Initialize(void);
-# 338 "./mcc_generated_files/system/../timer/tmr2.h"
+# 338 "mcc_generated_files/system/src/../../timer/tmr2.h"
 void TMR2_ModeSet(TMR2_HLT_MODE mode);
-# 347 "./mcc_generated_files/system/../timer/tmr2.h"
+# 347 "mcc_generated_files/system/src/../../timer/tmr2.h"
 void TMR2_ExtResetSourceSet(TMR2_HLT_EXT_RESET_SOURCE reset);
-# 356 "./mcc_generated_files/system/../timer/tmr2.h"
+# 356 "mcc_generated_files/system/src/../../timer/tmr2.h"
 void TMR2_Start(void);
-# 365 "./mcc_generated_files/system/../timer/tmr2.h"
+# 365 "mcc_generated_files/system/src/../../timer/tmr2.h"
 void TMR2_Stop(void);
-# 374 "./mcc_generated_files/system/../timer/tmr2.h"
+# 374 "mcc_generated_files/system/src/../../timer/tmr2.h"
 uint8_t TMR2_Read(void);
-# 383 "./mcc_generated_files/system/../timer/tmr2.h"
+# 383 "mcc_generated_files/system/src/../../timer/tmr2.h"
 void TMR2_Write(uint8_t timerVal);
-# 392 "./mcc_generated_files/system/../timer/tmr2.h"
+# 392 "mcc_generated_files/system/src/../../timer/tmr2.h"
 void TMR2_PeriodCountSet(size_t periodVal);
 
 
@@ -20305,10 +20305,10 @@ void TMR2_OverflowCallbackRegister(void (* InterruptHandler)(void));
 
 
 void TMR2_Tasks(void);
-# 47 "./mcc_generated_files/system/system.h" 2
+# 47 "mcc_generated_files/system/src/../system.h" 2
 
-# 1 "./mcc_generated_files/system/../timer/tmr4.h" 1
-# 107 "./mcc_generated_files/system/../timer/tmr4.h"
+# 1 "mcc_generated_files/system/src/../../timer/tmr4.h" 1
+# 107 "mcc_generated_files/system/src/../../timer/tmr4.h"
 extern const struct TMR_INTERFACE Timer4;
 
 
@@ -20318,7 +20318,7 @@ extern const struct TMR_INTERFACE Timer4;
 
 typedef enum
 {
-# 124 "./mcc_generated_files/system/../timer/tmr4.h"
+# 124 "mcc_generated_files/system/src/../../timer/tmr4.h"
    TMR4_ROP_STARTS_TMRON,
 
 
@@ -20355,7 +20355,7 @@ typedef enum
 
 
    TMR4_ROP_RESETS_ERSHIGH,
-# 170 "./mcc_generated_files/system/../timer/tmr4.h"
+# 170 "mcc_generated_files/system/src/../../timer/tmr4.h"
    TMR4_OS_STARTS_TMRON,
 
 
@@ -20405,7 +20405,7 @@ typedef enum
 
 
    TMR4_OS_STARTS_TMRON_ERSLOW = 0x17,
-# 227 "./mcc_generated_files/system/../timer/tmr4.h"
+# 227 "mcc_generated_files/system/src/../../timer/tmr4.h"
    TMR4_MS_STARTS_TMRON_ERSRISINGEDGEDETECT = 0x11,
 
 
@@ -20497,21 +20497,21 @@ typedef enum
 
     TMR4_LC4_OUT = 0x11
 } TMR4_HLT_EXT_RESET_SOURCE;
-# 329 "./mcc_generated_files/system/../timer/tmr4.h"
+# 329 "mcc_generated_files/system/src/../../timer/tmr4.h"
 void TMR4_Initialize(void);
-# 338 "./mcc_generated_files/system/../timer/tmr4.h"
+# 338 "mcc_generated_files/system/src/../../timer/tmr4.h"
 void TMR4_ModeSet(TMR4_HLT_MODE mode);
-# 347 "./mcc_generated_files/system/../timer/tmr4.h"
+# 347 "mcc_generated_files/system/src/../../timer/tmr4.h"
 void TMR4_ExtResetSourceSet(TMR4_HLT_EXT_RESET_SOURCE reset);
-# 356 "./mcc_generated_files/system/../timer/tmr4.h"
+# 356 "mcc_generated_files/system/src/../../timer/tmr4.h"
 void TMR4_Start(void);
-# 365 "./mcc_generated_files/system/../timer/tmr4.h"
+# 365 "mcc_generated_files/system/src/../../timer/tmr4.h"
 void TMR4_Stop(void);
-# 374 "./mcc_generated_files/system/../timer/tmr4.h"
+# 374 "mcc_generated_files/system/src/../../timer/tmr4.h"
 uint8_t TMR4_Read(void);
-# 383 "./mcc_generated_files/system/../timer/tmr4.h"
+# 383 "mcc_generated_files/system/src/../../timer/tmr4.h"
 void TMR4_Write(uint8_t timerVal);
-# 392 "./mcc_generated_files/system/../timer/tmr4.h"
+# 392 "mcc_generated_files/system/src/../../timer/tmr4.h"
 void TMR4_PeriodCountSet(size_t periodVal);
 
 
@@ -20529,519 +20529,36 @@ void TMR4_OverflowCallbackRegister(void (* InterruptHandler)(void));
 
 
 void TMR4_Tasks(void);
-# 48 "./mcc_generated_files/system/system.h" 2
+# 48 "mcc_generated_files/system/src/../system.h" 2
 
-# 1 "./mcc_generated_files/system/../system/interrupt.h" 1
-# 85 "./mcc_generated_files/system/../system/interrupt.h"
+# 1 "mcc_generated_files/system/src/../../system/interrupt.h" 1
+# 85 "mcc_generated_files/system/src/../../system/interrupt.h"
 void INTERRUPT_Initialize (void);
-# 139 "./mcc_generated_files/system/../system/interrupt.h"
+# 139 "mcc_generated_files/system/src/../../system/interrupt.h"
 void INT_ISR(void);
-# 148 "./mcc_generated_files/system/../system/interrupt.h"
+# 148 "mcc_generated_files/system/src/../../system/interrupt.h"
 void INT_CallBack(void);
-# 157 "./mcc_generated_files/system/../system/interrupt.h"
+# 157 "mcc_generated_files/system/src/../../system/interrupt.h"
 void INT_SetInterruptHandler(void (* InterruptHandler)(void));
-# 166 "./mcc_generated_files/system/../system/interrupt.h"
+# 166 "mcc_generated_files/system/src/../../system/interrupt.h"
 extern void (*INT_InterruptHandler)(void);
-# 175 "./mcc_generated_files/system/../system/interrupt.h"
+# 175 "mcc_generated_files/system/src/../../system/interrupt.h"
 void INT_DefaultInterruptHandler(void);
-# 49 "./mcc_generated_files/system/system.h" 2
-# 59 "./mcc_generated_files/system/system.h"
+# 49 "mcc_generated_files/system/src/../system.h" 2
+# 59 "mcc_generated_files/system/src/../system.h"
 void SYSTEM_Initialize(void);
-# 35 "main.c" 2
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 1 3
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef void * va_list[1];
-
-
-
-
-typedef void * __isoc_va_list[1];
-# 143 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef short ssize_t;
-# 255 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long off_t;
-# 409 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef struct _IO_FILE FILE;
-# 25 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 2 3
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 3
-typedef union _G_fpos64_t {
- char __opaque[16];
- double __align;
-} fpos_t;
-
-extern FILE *const stdin;
-extern FILE *const stdout;
-extern FILE *const stderr;
-
-
-
-
-
-FILE *fopen(const char *restrict, const char *restrict);
-FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
-int fclose(FILE *);
-
-int remove(const char *);
-int rename(const char *, const char *);
-
-int feof(FILE *);
-int ferror(FILE *);
-int fflush(FILE *);
-void clearerr(FILE *);
-
-int fseek(FILE *, long, int);
-long ftell(FILE *);
-void rewind(FILE *);
-
-int fgetpos(FILE *restrict, fpos_t *restrict);
-int fsetpos(FILE *, const fpos_t *);
-
-size_t fread(void *restrict, size_t, size_t, FILE *restrict);
-size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
-
-int fgetc(FILE *);
-int getc(FILE *);
-int getchar(void);
-
-
-
-
-
-int ungetc(int, FILE *);
-int getch(void);
-
-int fputc(int, FILE *);
-int putc(int, FILE *);
-int putchar(int);
-
-
-
-
-
-void putch(char);
-
-char *fgets(char *restrict, int, FILE *restrict);
-
-char *gets(char *);
-
-
-int fputs(const char *restrict, FILE *restrict);
-int puts(const char *);
-
-__attribute__((__format__(__printf__, 1, 2)))
-int printf(const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int fprintf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int sprintf(char *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 3, 4)))
-int snprintf(char *restrict, size_t, const char *restrict, ...);
-
-__attribute__((__format__(__printf__, 1, 0)))
-int vprintf(const char *restrict, __isoc_va_list);
-int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 2, 0)))
-int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 3, 0)))
-int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
-
-__attribute__((__format__(__scanf__, 1, 2)))
-int scanf(const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int fscanf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int sscanf(const char *restrict, const char *restrict, ...);
-
-__attribute__((__format__(__scanf__, 1, 0)))
-int vscanf(const char *restrict, __isoc_va_list);
-int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__scanf__, 2, 0)))
-int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
-
-void perror(const char *);
-
-int setvbuf(FILE *restrict, char *restrict, int, size_t);
-void setbuf(FILE *restrict, char *restrict);
-
-char *tmpnam(char *);
-FILE *tmpfile(void);
-
-
-
-
-FILE *fmemopen(void *restrict, size_t, const char *restrict);
-FILE *open_memstream(char **, size_t *);
-FILE *fdopen(int, const char *);
-FILE *popen(const char *, const char *);
-int pclose(FILE *);
-int fileno(FILE *);
-int fseeko(FILE *, off_t, int);
-off_t ftello(FILE *);
-int dprintf(int, const char *restrict, ...);
-int vdprintf(int, const char *restrict, __isoc_va_list);
-void flockfile(FILE *);
-int ftrylockfile(FILE *);
-void funlockfile(FILE *);
-int getc_unlocked(FILE *);
-int getchar_unlocked(void);
-int putc_unlocked(int, FILE *);
-int putchar_unlocked(int);
-ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
-ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
-int renameat(int, const char *, int, const char *);
-char *ctermid(char *);
-
-
-
-
-
-
-
-char *tempnam(const char *, const char *);
-# 39 "main.c" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\time.h" 1 3
-# 33 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\time.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 82 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long time_t;
-# 303 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef void * timer_t;
-
-
-
-
-typedef int clockid_t;
-
-
-
-
-typedef unsigned long clock_t;
-# 323 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-struct timespec { time_t tv_sec; long tv_nsec; };
-
-
-
-
-
-typedef int pid_t;
-# 421 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef struct __locale_struct * locale_t;
-# 34 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\time.h" 2 3
-
-
-
-
-
-
-struct tm {
- int tm_sec;
- int tm_min;
- int tm_hour;
- int tm_mday;
- int tm_mon;
- int tm_year;
- int tm_wday;
- int tm_yday;
- int tm_isdst;
- long __tm_gmtoff;
- const char *__tm_zone;
-};
-
-clock_t clock (void);
-time_t time (time_t *);
-double difftime (time_t, time_t);
-time_t mktime (struct tm *);
-size_t strftime (char *restrict, size_t, const char *restrict, const struct tm *restrict);
-struct tm *gmtime (const time_t *);
-struct tm *localtime (const time_t *);
-char *asctime (const struct tm *);
-char *ctime (const time_t *);
-int timespec_get(struct timespec *, int);
-# 73 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\time.h" 3
-size_t strftime_l (char * restrict, size_t, const char * restrict, const struct tm * restrict, locale_t);
-
-struct tm *gmtime_r (const time_t *restrict, struct tm *restrict);
-struct tm *localtime_r (const time_t *restrict, struct tm *restrict);
-char *asctime_r (const struct tm *restrict, char *restrict);
-char *ctime_r (const time_t *, char *);
-
-void tzset (void);
-
-struct itimerspec {
- struct timespec it_interval;
- struct timespec it_value;
-};
-# 102 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\time.h" 3
-int nanosleep (const struct timespec *, struct timespec *);
-int clock_getres (clockid_t, struct timespec *);
-int clock_gettime (clockid_t, struct timespec *);
-int clock_settime (clockid_t, const struct timespec *);
-int clock_nanosleep (clockid_t, int, const struct timespec *, struct timespec *);
-int clock_getcpuclockid (pid_t, clockid_t *);
-
-struct sigevent;
-int timer_create (clockid_t, struct sigevent *restrict, timer_t *restrict);
-int timer_delete (timer_t);
-int timer_settime (timer_t, int, const struct itimerspec *restrict, struct itimerspec *restrict);
-int timer_gettime (timer_t, struct itimerspec *);
-int timer_getoverrun (timer_t);
-
-extern char *tzname[2];
-
-
-
-
-
-char *strptime (const char *restrict, const char *restrict, struct tm *restrict);
-extern int daylight;
-extern long timezone;
-extern int getdate_err;
-struct tm *getdate (const char *);
-# 40 "main.c" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 1 3
-# 25 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 26 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 2 3
-
-void *memcpy (void *restrict, const void *restrict, size_t);
-void *memmove (void *, const void *, size_t);
-void *memset (void *, int, size_t);
-int memcmp (const void *, const void *, size_t);
-void *memchr (const void *, int, size_t);
-
-char *strcpy (char *restrict, const char *restrict);
-char *strncpy (char *restrict, const char *restrict, size_t);
-
-char *strcat (char *restrict, const char *restrict);
-char *strncat (char *restrict, const char *restrict, size_t);
-
-int strcmp (const char *, const char *);
-int strncmp (const char *, const char *, size_t);
-
-int strcoll (const char *, const char *);
-size_t strxfrm (char *restrict, const char *restrict, size_t);
-
-char *strchr (const char *, int);
-char *strrchr (const char *, int);
-
-size_t strcspn (const char *, const char *);
-size_t strspn (const char *, const char *);
-char *strpbrk (const char *, const char *);
-char *strstr (const char *, const char *);
-char *strtok (char *restrict, const char *restrict);
-
-size_t strlen (const char *);
-
-char *strerror (int);
-
-
-
-
-char *strtok_r (char *restrict, const char *restrict, char **restrict);
-int strerror_r (int, char *, size_t);
-char *stpcpy(char *restrict, const char *restrict);
-char *stpncpy(char *restrict, const char *restrict, size_t);
-size_t strnlen (const char *, size_t);
-char *strdup (const char *);
-char *strndup (const char *, size_t);
-char *strsignal(int);
-char *strerror_l (int, locale_t);
-int strcoll_l (const char *, const char *, locale_t);
-size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
-
-
-
-
-void *memccpy (void *restrict, const void *restrict, int, size_t);
-# 41 "main.c" 2
-# 54 "main.c"
-int code_secret[4];
-void gencodesecret(void);
-void propositionj2(void);
-void compare(void);
-void matrice(void);
-void init(void);
-void set_couleur(void);
-void gen_digi(void);
-
-uint8_t chenille(void);
-void detec(uint8_t colonne);
-uint8_t ToucheE1(void);
-
-typedef struct {
-    char green;
-    char red;
-    char blue;
-} Led;
-
-const Led magenta = {0, 255, 255};
-const Led rouge = {0, 255, 0};
-const Led carotte = {102, 244, 27};
-const Led jaune = {255, 255, 0};
-const Led vert = {255, 0, 0};
-const Led cyan = {255, 0, 255};
-const Led bleu = {0, 0, 255};
-const Led violet = {0, 127, 255};
-
-const Led blanc = {255, 255, 255};
-const Led rose = {182, 255, 193};
-const Led noir = {0, 0, 0};
-
-Led Data[128];
-
-int main(void) {
-    SYSTEM_Initialize();
-
-    uint8_t i;
-# 100 "main.c"
-    (INTCONbits.GIE = 1);
-
-
-
-
-
-    (INTCONbits.PEIE = 1);
-
-
-
-
-    SPI1_Open(0);
-
-    memset(Data, 0x00, sizeof (Data));
-# 158 "main.c"
-    SPI1_BufferExchange(Data, sizeof (Data));
-
-    while (1) {
-        chenille();
-        _delay((unsigned long)((1)*(32000000U/4000.0)));
-        detec(chenille());
-
-    }
+# 36 "mcc_generated_files/system/src/system.c" 2
+
+
+
+void SYSTEM_Initialize(void)
+{
+    CLOCK_Initialize();
+    PIN_MANAGER_Initialize();
+    CLC1_Initialize();
+    CCP1_Initialize();
+    SPI1_Initialize();
+    TMR2_Initialize();
+    TMR4_Initialize();
+    INTERRUPT_Initialize();
 }
-# 238 "main.c"
-void init(void) {
-
-    typedef struct {
-        char vert;
-        char rouge;
-        char bleu;
-    } Led;
-    const Led magenta = {0, 255, 255};
-    const Led rouge = {0, 255, 0};
-    const Led carotte = {102, 244, 27};
-    const Led jaune = {255, 255, 0};
-    const Led vert = {255, 0, 0};
-    const Led cyan = {255, 0, 255};
-    const Led bleu = {0, 0, 255};
-    const Led violet = {0, 127, 255};
-
-    const Led blanc = {255, 255, 255};
-    const Led rose = {182, 255, 193};
-    const Led noir = {0, 0, 0};
-
-
-
-}
-
-void set_couleur(void) {
-
-}
-
-uint8_t chenille(void) {
-    uint8_t i, colonne = 0;
-    for (i = 0; i <= 3; i++) {
-        switch (i) {
-            case 1:
-                do { LATCbits.LATC1 = 1; } while(0);
-                do { LATAbits.LATA6 = 0; } while(0);
-                colonne = 1;
-                break;
-            case 2:
-                do { LATAbits.LATA6 = 1; } while(0);
-                do { LATCbits.LATC0 = 0; } while(0);
-                colonne = 2;
-                break;
-            case 3:
-                do { LATCbits.LATC0 = 1; } while(0);
-                do { LATCbits.LATC1 = 0; } while(0);
-                colonne = 3;
-                break;
-        }
-    }
-    return colonne;
-
-}
-
-void detec(uint8_t colonne) {
-    uint8_t valeur, ligne,touche;
-
-
-    if(PORTAbits.RA2==1)
-    {
-        ligne=1;
-    }
-    if(PORTAbits.RA3==1)
-    {
-        ligne=2;
-    }
-    if(PORTAbits.RA4==1)
-    {
-        ligne=3;
-    }
-    if(PORTAbits.RA5==1)
-    {
-        ligne=4;
-    }
-
-    valeur = (10 * colonne) + ligne;
-
-    switch (valeur)
-    {
-        case(11):
-            touche=1;
-            break;
-        case(12):
-            touche=4;
-            break;
-        case(13):
-            touche=7;
-            break;
-        case(14):
-            touche=10;
-            break;
-        case(21):
-            touche=2;
-            break;
-        case(22):
-            touche=5;
-            break;
-        case(23):
-            touche=8;
-            break;
-        case(24):
-            touche=0;
-            break;
-        case(31):
-            touche=3;
-            break;
-        case(32):
-            touche=6;
-            break;
-        case(33):
-            touche=9;
-            break;
-        case(34):
-            touche=12;
-            break;
-
-            printf("%hhu",touche);
-    }
-    }
